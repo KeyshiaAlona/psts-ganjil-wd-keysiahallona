@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wadah-konten {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1e3a20;
+}
+
+.kartu-item {
+    background-color: #ebd7d7;
+    padding: 16px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-left: 4px solid #1e3a20;
+}
+
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color:#1e3a20;
+}
+
+.status-ujian {
+    color: #1e3a20;
+    background-color: #e8f0e9;
+    padding: 5px;
+}
