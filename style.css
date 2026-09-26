@@ -1,0 +1,340 @@
+
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #26364a;
+    line-height: 1.8;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #102a43, #1d4e89);
+    color: white;
+    padding: 90px 38px 75px;
+}
+
+/* lingkaran dekorasi */
+
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
+
+.hero::before {
+    width: 210px;
+    height: 210px;
+    right: -45px;
+    top: 35px;
+}
+
+.hero::after {
+    width: 170px;
+    height: 170px;
+    right: 70px;
+    top: 80px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.kelas {
+    font-size: 19px;
+    letter-spacing: 4px;
+    color: #dcecff;
+    margin-bottom: 30px;
+}
+
+.garis {
+    width: 105px;
+    height: 5px;
+    background: #8fc7ff;
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+nav {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 40px;
+    padding: 10px 26px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background: white;
+    color: #174a7e;
+    transform: translateY(-3px);
+}
+
+
+/* ================================
+   SECTION
+================================ */
+
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 38px 20px;
+}
+
+.section h2,
+.kontak h2 {
+    font-size: 39px;
+    line-height: 1.3;
+    color: #123b63;
+    margin-bottom: 18px;
+}
+
+.garis-kecil {
+    width: 85px;
+    height: 5px;
+    background: #8dbce0;
+    border-radius: 20px;
+    margin-bottom: 48px;
+}
+
+.section p {
+    font-size: 20px;
+    color: #637184;
+    margin-bottom: 32px;
+}
+
+
+/* ================================
+   CARD GALERI
+================================ */
+
+.card {
+    background: white;
+    border: 1px solid #e1e8f0;
+    border-radius: 25px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 12px 30px rgba(31, 63, 96, 0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 35px rgba(31, 63, 96, 0.14);
+}
+
+.card h3 {
+    font-size: 26px;
+    color: #183e62;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 19px;
+    color: #6d7987;
+    margin-bottom: 5px;
+}
+
+.card span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2869a3;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* ================================
+   KONTAK
+================================ */
+
+.kontak {
+    max-width: 1000px;
+    margin: 110px auto 180px;
+    background: linear-gradient(135deg, #eaf4ff, #f4f9ff);
+    border: 1px solid #d8e7f5;
+    border-radius: 30px;
+    padding: 55px 48px;
+    box-shadow: 0 12px 30px rgba(31, 63, 96, 0.06);
+}
+
+.kontak p {
+    font-size: 20px;
+    color: #617083;
+    margin-bottom: 35px;
+    max-width: 700px;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.tombol {
+    display: inline-block;
+    background: #1d5d91;
+    color: white;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 18px rgba(29, 93, 145, 0.2);
+}
+
+.tombol:hover {
+    background: #123f65;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(29, 93, 145, 0.3);
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background: #0d263d;
+    color: white;
+    text-align: center;
+    padding: 55px 30px;
+    font-size: 17px;
+}
+
+.footer-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.status,
+.status-bawah {
+    background: #dcecff;
+    color: #173b5c;
+    padding: 10px 23px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.status-bawah {
+    display: inline-block;
+    margin-top: 18px;
+}
+
+
+/* ================================
+   RESPONSIVE HP
+================================ */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 70px 38px 65px;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .kelas {
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+    .garis {
+        margin-bottom: 50px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 17px;
+        padding: 9px 22px;
+    }
+
+    .section {
+        padding: 65px 38px 10px;
+    }
+
+    .section h2,
+    .kontak h2 {
+        font-size: 34px;
+    }
+
+    .section p,
+    .kontak p {
+        font-size: 19px;
+    }
+
+    .card {
+        padding: 35px;
+        border-radius: 24px;
+    }
+
+    .card h3 {
+        font-size: 24px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .kontak {
+        margin: 90px 38px 160px;
+        padding: 45px 35px;
+    }
+
+    .footer-status {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
